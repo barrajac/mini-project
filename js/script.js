@@ -1,9 +1,11 @@
 //PSEUDO CODE / PLAN //
 /**
  * 1. Create a class for the spaceship c properties: hull, firepower, accuracy, and an attack method.
- * 2. Create a function to generate a random number between a given range.
+ * 2. Create a class for AlienShip, and make properties equal to fxns that generate a random number between a given range.
+ * create attack method specific to it
  * 3. Instantiate the USS Assembly spaceship with specified properties.
- * 4. Generate an array of alien spaceships with random properties.
+ * 4. Instantiate alien spaceships with random properties, and store all in array
+ * create attack method specific to it
  * Create a game loop:
  *    a. USS Assembly attacks the first alien spaceship.
  *    b. If the alien spaceship survives, it attacks the USS Assembly.
@@ -80,22 +82,16 @@ class AlienShip {
   }
 }
 
+//instantiate new alienShips, and add them to array
 alienFleet = [];
 for (let i = 1; i <= 6; i++) {
   const newAlien = new AlienShip("enemy");
   alienFleet.push(newAlien);
 }
 
-ship.attack(alienFleet[0])
+ship.attack(alienFleet[0]);
 
 // Notes //
 
-//how to shift math.random: mult by range (ex. range is 4, the * 5) (ex. if what b/t 4 and 8  then (8-4)+1 = *5), then mult by min num in array
+//how to shift math.random: mult by range (ex. range is 4, then, plus one resulting in * 5) (ex. if range must be b/t 4 and 8  then (8-4)+1 = *5), then mult by min num in array
 //Math.random give rando num b/t 0 and 1, zero inclusive, one non-inclusive
-
-// let alienFleet = [];
-// for (let i = 0; i < 6; i++) {
-//   const alienShip = new AlienShip(); //instantiate alienShips
-//   alienFleet.push(alienShip);
-//   return alienFleet;
-// }

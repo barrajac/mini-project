@@ -1,11 +1,11 @@
 //PSEUDO CODE / PLAN //
 /**
- * 1. Create a class for the spaceship c properties: hull, firepower, accuracy, and an attack method.
+ * 1. Create a object for the uss spaceship c properties: hull, firepower, accuracy,
+ * create an attack method as a property to it.
  * 2. Create a class for AlienShip, and make properties equal to fxns that generate a random number between a given range.
  * create attack method specific to it
  * 3. Instantiate the USS Assembly spaceship with specified properties.
  * 4. Instantiate alien spaceships with random properties, and store all in array
- * create attack method specific to it
  * Create a game loop:
  *    a. USS Assembly attacks the first alien spaceship.
  *    b. If the alien spaceship survives, it attacks the USS Assembly.
